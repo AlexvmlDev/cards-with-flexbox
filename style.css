@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-size: 10px;
+}
+
+div,
+ul,
+li {
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+    font-size: 2.4rem;
+}
+
+p {
+    color: #d9d9d9;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.container-wrapper {
+    max-width: 1140px;
+    height: auto;
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    flex: wrap 1 1 auto;
+}
+
+.navigation li {
+    background-color: #136F63;
+    padding: 15px 30px;
+    border-radius: 100px;
+}
+
+.navigation li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: #0f5950;
+}
+
+.navigation li a:hover {
+    color: #f2f2f2;
+}
+
+.flex-container {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 30px 10px;
+
+    width: 100%;
+    height: auto;
+    margin: 30px auto 0;
+}
+
+.card {
+    width: 200px;
+    height: 500px;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    background-color: #136F63;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+button {
+    font-size: 1.4rem;
+    color: white;
+
+    width: 80%;
+    height: auto;
+    padding: 8px 12px;
+
+    background: #6f131f;
+    border-style: none;
+    border-radius: 6px;
+}
