@@ -1,108 +1,114 @@
 * {
     box-sizing: border-box;
     margin: auto;
+  }
+  
+  :root {
     font-size: 10px;
-}
-
-div,
-ul,
-li {
+    
+    --primary-color: #136F63;
+    --primary-hover: #0f5950;
+    --button: #6f131f;
+    --background: #000F08;
+    --white: #ffffff;
+    --white-hover: #f2f2f2;
+  }
+  
+  div, ul, li {
     padding: 10px;
-}
-
-h3 {
-    color: white;
+  }
+  h3 {
+    color: var(--white);
     font-size: 2.4rem;
-}
-
-p {
+  }
+  p {
     color: #d9d9d9;
     font-size: 1.4rem;
     text-align: left;
-}
-
-.container-wrapper {
+  }
+  
+  .container-wrapper {
     max-width: 1140px;
     height: auto;
-    background-color: black;
-}
-
-ul {
+    background: linear-gradient(0deg, var(--primary-color), #000000);
+  }
+  
+  ul {
     list-style-type: none;
-}
-
-.navigation {
+  }
+  
+  .navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: white;
     padding: 10px;
     flex: wrap 1 1 auto;
-}
-
-.navigation li {
-    background-color: #136F63;
+  }
+  
+  .navigation li {
+    background-color: var(--primary-color);
     padding: 15px 30px;
     border-radius: 100px;
-}
-
-.navigation li a {
+  }
+  
+  .navigation li a {
     font-size: 14px;
     text-transform: uppercase;
-    color: white;
+    color: var(--white);
     text-decoration: none;
-}
-
-.navigation li:hover {
-    background-color: #0f5950;
-}
-
-.navigation li a:hover {
-    color: #f2f2f2;
-}
-
-.flex-container {
-    background-color: white;
-
+  }
+  
+  .navigation li:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .navigation li a:hover {
+    color: var(--white-hover);
+  }
+  
+  .flex-container {
+    background-color: var(--white);
+    
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     gap: 30px 10px;
-
+    
     width: 100%;
     height: auto;
     margin: 30px auto 0;
-}
-
-.card {
+  }
+  
+  .card {
     width: 200px;
     height: 500px;
     padding: 0;
-
+    
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-
-    background-color: #136F63;
-}
-
-.card .content {
+    
+    background-color: var(--primary-color);
+  }
+  
+  .card .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-
-}
-
-button {
+    
+  } 
+  
+  button {
     font-size: 1.4rem;
-    color: white;
-
+    color: var(--white);
+    
     width: 80%;
     height: auto;
     padding: 8px 12px;
-
-    background: #6f131f;
+    
+    background: var(--button);
     border-style: none;
     border-radius: 6px;
-}
+  }
